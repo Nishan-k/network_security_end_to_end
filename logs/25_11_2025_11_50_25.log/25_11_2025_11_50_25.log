@@ -1,0 +1,2 @@
+[2025-11-25 11:50:25,699] 25 root - INFO - Entering the TRY Block
+[2025-11-25 11:50:25,700] 28 root - INFO - Error Occured in Python Script: [D:\ML Engineer\1. MlOps\Projects\4. End to end Mlops with ETL for network security system\network_security_end_to_end\networksecurity\exception\exception.py] on line number: [26] with error message: [division by zero]
