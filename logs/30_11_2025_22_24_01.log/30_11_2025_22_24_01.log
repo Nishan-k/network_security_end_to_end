@@ -1,0 +1,33 @@
+[2025-11-30 22:24:02,202] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-11-30 22:24:02,203] 25 root - INFO - START OF: DATA INGESTION
+[2025-11-30 22:24:02,203] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-11-30 22:24:02,203] 18 root - INFO - Initiating Data Ingestion
+[2025-11-30 22:24:08,581] 85 root - INFO - Train-Test split completed. Train: 80.0% and Test: 20.0%
+
+[2025-11-30 22:24:08,581] 86 root - INFO - Exited the `split_data_as_train_test` method of DataIngestion Class.
+[2025-11-30 22:24:08,582] 90 root - INFO - Exporting the train and test data.
+[2025-11-30 22:24:08,639] 93 root - INFO - Exporting training and testind data completed.
+[2025-11-30 22:24:08,640] 20 root - INFO - Data Ingestion Artifacts:
+DataIngestionArtifact(trained_file_path='Artifacts\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\data_ingestion\\ingested\\test.csv')
+[2025-11-30 22:24:08,640] 21 root - INFO - Data Ingestion Completed with SUCCESS!!
+[2025-11-30 22:24:08,647] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-11-30 22:24:08,647] 25 root - INFO - START OF: DATA VALIDATION
+[2025-11-30 22:24:08,648] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-11-30 22:24:08,648] 28 root - INFO - Initiating Data Validation:
+[2025-11-30 22:24:08,648] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\train.csv
+[2025-11-30 22:24:08,671] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\test.csv
+[2025-11-30 22:24:08,697] 27 root - INFO - Required number of columns: 31
+[2025-11-30 22:24:08,697] 28 root - INFO - The number of columns in the provided dataframe is: 31
+[2025-11-30 22:24:08,697] 30 root - INFO - The number of columns matches.
+[2025-11-30 22:24:08,697] 27 root - INFO - Required number of columns: 31
+[2025-11-30 22:24:08,697] 28 root - INFO - The number of columns in the provided dataframe is: 31
+[2025-11-30 22:24:08,697] 30 root - INFO - The number of columns matches.
+[2025-11-30 22:24:08,860] 30 root - INFO - Data Validation artifacts:
+DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\data_ingestion\\ingested\\train.csv', valid_test_file_path='Artifacts\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\data_validation\\drift_report\\report.yaml')
+[2025-11-30 22:24:08,860] 31 root - INFO - Data Validation Completed.
