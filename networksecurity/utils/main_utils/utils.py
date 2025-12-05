@@ -7,7 +7,7 @@ import pickle
 import pandas as pd
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import r2_score
-
+import numpy as np
 
 # 1. To read the YAML File:
 def read_yaml_file(file_path:str) -> dict:
@@ -40,3 +40,27 @@ def read_data(file_path:str) -> pd.DataFrame:
         return pd.read_csv(file_path)
     except Exception as e:
         raise NetworkSecurityException(e, sys)
+
+# 4. To save a NumPy array data:
+def save_numpy_array_data(file_path:str, array:np.array):
+    try:
+        logging.info(f"Saving the NumPy array data at: {file_path}")
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(file_path, "wb") as file_obj:
+            np.save(file_obj, array)
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)
+    
+
+# 5. To save an object as .pkl file:
+def save_obj_to_pkl(file_path:str, obj:object) -> None:
+    try:
+        logging.info(f"Saving the object as .pkl file at: {file_path}")
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(file_path, "wb") as file_obj:
+            pickle.dump(obj, file_obj)
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)
+    
