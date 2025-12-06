@@ -1,0 +1,50 @@
+[2025-12-06 07:41:00,379] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-06 07:41:00,380] 25 root - INFO - START OF: DATA INGESTION
+[2025-12-06 07:41:00,380] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-06 07:41:00,380] 20 root - INFO - Initiating Data Ingestion
+[2025-12-06 07:41:06,400] 85 root - INFO - Train-Test split completed. Train: 80.0% and Test: 20.0%
+
+[2025-12-06 07:41:06,400] 86 root - INFO - Exited the `split_data_as_train_test` method of DataIngestion Class.
+[2025-12-06 07:41:06,400] 90 root - INFO - Exporting the train and test data.
+[2025-12-06 07:41:06,462] 93 root - INFO - Exporting training and testind data completed.
+[2025-12-06 07:41:06,462] 22 root - INFO - Data Ingestion Artifacts:
+DataIngestionArtifact(trained_file_path='Artifacts\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\data_ingestion\\ingested\\test.csv')
+[2025-12-06 07:41:06,462] 23 root - INFO - Data Ingestion Completed with SUCCESS!!
+[2025-12-06 07:41:06,470] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-06 07:41:06,470] 25 root - INFO - START OF: DATA VALIDATION
+[2025-12-06 07:41:06,470] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-06 07:41:06,470] 30 root - INFO - Initiating Data Validation:
+[2025-12-06 07:41:06,470] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\train.csv
+[2025-12-06 07:41:06,494] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\test.csv
+[2025-12-06 07:41:06,517] 27 root - INFO - Required number of columns: 31
+[2025-12-06 07:41:06,517] 28 root - INFO - The number of columns in the provided dataframe is: 31
+[2025-12-06 07:41:06,517] 30 root - INFO - The number of columns matches.
+[2025-12-06 07:41:06,517] 27 root - INFO - Required number of columns: 31
+[2025-12-06 07:41:06,517] 28 root - INFO - The number of columns in the provided dataframe is: 31
+[2025-12-06 07:41:06,517] 30 root - INFO - The number of columns matches.
+[2025-12-06 07:41:06,665] 32 root - INFO - Data Validation artifacts:
+DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\data_ingestion\\ingested\\train.csv', valid_test_file_path='Artifacts\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\data_validation\\drift_report\\report.yaml')
+[2025-12-06 07:41:06,665] 33 root - INFO - Data Validation Completed.
+[2025-12-06 07:41:06,665] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-06 07:41:06,665] 25 root - INFO - START OF: DATA TRANSFORMATION
+[2025-12-06 07:41:06,665] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-06 07:41:06,665] 41 root - INFO - Initiating Data Transformation
+[2025-12-06 07:41:06,665] 36 root - INFO - Entered initiate_data_transformation method of DataTransformation Class
+[2025-12-06 07:41:06,665] 38 root - INFO - Starting Data Transformation
+[2025-12-06 07:41:06,665] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\train.csv
+[2025-12-06 07:41:06,680] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\test.csv
+[2025-12-06 07:41:06,687] 25 root - INFO - Entered the get_data_transformer_object method of the DataTransformation Class
+[2025-12-06 07:41:06,694] 47 root - INFO - Saving the NumPy array data at: Artifacts\data_transformation\transformed\train.npy
+[2025-12-06 07:41:06,698] 47 root - INFO - Saving the NumPy array data at: Artifacts\data_transformation\transformed\test.npy
+[2025-12-06 07:41:06,699] 59 root - INFO - Saving the object as .pkl file at: Artifacts\data_transformation\transformed_object\preprocessing.pkl
+[2025-12-06 07:41:06,703] 43 root - INFO - Data validation COMPLETED. The data validation artifacts:
+DataTransformationArtifact(transformed_object_file_path='Artifacts\\data_transformation\\transformed_object\\preprocessing.pkl', transformed_train_file_path='Artifacts\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\data_transformation\\transformed\\test.npy')

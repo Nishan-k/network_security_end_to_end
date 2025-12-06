@@ -1,0 +1,45 @@
+[2025-12-06 07:40:22,249] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-06 07:40:22,249] 25 root - INFO - START OF: DATA INGESTION
+[2025-12-06 07:40:22,249] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-06 07:40:22,249] 20 root - INFO - Initiating Data Ingestion
+[2025-12-06 07:40:28,310] 85 root - INFO - Train-Test split completed. Train: 80.0% and Test: 20.0%
+
+[2025-12-06 07:40:28,310] 86 root - INFO - Exited the `split_data_as_train_test` method of DataIngestion Class.
+[2025-12-06 07:40:28,310] 90 root - INFO - Exporting the train and test data.
+[2025-12-06 07:40:28,371] 93 root - INFO - Exporting training and testind data completed.
+[2025-12-06 07:40:28,371] 22 root - INFO - Data Ingestion Artifacts:
+DataIngestionArtifact(trained_file_path='Artifacts\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\data_ingestion\\ingested\\test.csv')
+[2025-12-06 07:40:28,371] 23 root - INFO - Data Ingestion Completed with SUCCESS!!
+[2025-12-06 07:40:28,379] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-06 07:40:28,379] 25 root - INFO - START OF: DATA VALIDATION
+[2025-12-06 07:40:28,379] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-06 07:40:28,379] 30 root - INFO - Initiating Data Validation:
+[2025-12-06 07:40:28,379] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\train.csv
+[2025-12-06 07:40:28,403] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\test.csv
+[2025-12-06 07:40:28,426] 27 root - INFO - Required number of columns: 31
+[2025-12-06 07:40:28,426] 28 root - INFO - The number of columns in the provided dataframe is: 31
+[2025-12-06 07:40:28,426] 30 root - INFO - The number of columns matches.
+[2025-12-06 07:40:28,426] 27 root - INFO - Required number of columns: 31
+[2025-12-06 07:40:28,426] 28 root - INFO - The number of columns in the provided dataframe is: 31
+[2025-12-06 07:40:28,426] 30 root - INFO - The number of columns matches.
+[2025-12-06 07:40:28,594] 32 root - INFO - Data Validation artifacts:
+DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\data_ingestion\\ingested\\train.csv', valid_test_file_path='Artifacts\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\data_validation\\drift_report\\report.yaml')
+[2025-12-06 07:40:28,594] 33 root - INFO - Data Validation Completed.
+[2025-12-06 07:40:28,594] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-06 07:40:28,594] 25 root - INFO - START OF: DATA TRANSFORMATION
+[2025-12-06 07:40:28,594] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-06 07:40:28,594] 41 root - INFO - Initiating Data Transformation
+[2025-12-06 07:40:28,594] 36 root - INFO - Entered initiate_data_transformation method of DataTransformation Class
+[2025-12-06 07:40:28,594] 38 root - INFO - Starting Data Transformation
+[2025-12-06 07:40:28,594] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\train.csv
+[2025-12-06 07:40:28,608] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\test.csv
+[2025-12-06 07:40:28,615] 25 root - INFO - Entered the get_data_transformer_object method of the DataTransformation Class
