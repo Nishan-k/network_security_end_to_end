@@ -1,0 +1,6 @@
+[2025-12-06 13:06:14,566] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-06 13:06:14,586] 107 dagshub - INFO - Accessing as Nishan-k
+[2025-12-06 13:06:15,494] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Nishan-k/network_security_end_to_end "HTTP/1.1 200 OK"
+[2025-12-06 13:06:16,315] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-06 13:06:16,322] 107 dagshub - INFO - Initialized MLflow to track repo "Nishan-k/network_security_end_to_end"
+[2025-12-06 13:06:16,325] 107 dagshub - INFO - Repository Nishan-k/network_security_end_to_end initialized!

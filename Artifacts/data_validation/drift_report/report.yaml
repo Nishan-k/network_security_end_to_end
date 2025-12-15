@@ -1,0 +1,93 @@
+Abnormal_URL:
+  P-value: 0.9935243434380693
+  has_data_drift: false
+DNSRecord:
+  P-value: 0.8807137057443575
+  has_data_drift: false
+Domain_registeration_length:
+  P-value: 0.9876237011526984
+  has_data_drift: false
+Favicon:
+  P-value: 1.0
+  has_data_drift: false
+Google_Index:
+  P-value: 1.0
+  has_data_drift: false
+HTTPS_token:
+  P-value: 0.9998299425911609
+  has_data_drift: false
+Iframe:
+  P-value: 0.9999999999990964
+  has_data_drift: false
+Links_in_tags:
+  P-value: 0.6449841622347342
+  has_data_drift: false
+Links_pointing_to_page:
+  P-value: 0.9914952304622426
+  has_data_drift: false
+Page_Rank:
+  P-value: 0.9998299425911609
+  has_data_drift: false
+Prefix_Suffix:
+  P-value: 1.0
+  has_data_drift: false
+Redirect:
+  P-value: 0.9844261985874094
+  has_data_drift: false
+Request_URL:
+  P-value: 0.9925611176019148
+  has_data_drift: false
+Result:
+  P-value: 0.7089345314550541
+  has_data_drift: false
+RightClick:
+  P-value: 1.0
+  has_data_drift: false
+SFH:
+  P-value: 1.0
+  has_data_drift: false
+SSLfinal_State:
+  P-value: 1.0
+  has_data_drift: false
+Shortining_Service:
+  P-value: 0.9996208033369954
+  has_data_drift: false
+Statistical_report:
+  P-value: 1.0
+  has_data_drift: false
+Submitting_to_email:
+  P-value: 0.9876237011526984
+  has_data_drift: false
+URL_Length:
+  P-value: 1.0
+  has_data_drift: false
+URL_of_Anchor:
+  P-value: 0.7168453975391859
+  has_data_drift: false
+age_of_domain:
+  P-value: 0.9844261985874094
+  has_data_drift: false
+double_slash_redirecting:
+  P-value: 0.9999998996954222
+  has_data_drift: false
+having_At_Symbol:
+  P-value: 1.0
+  has_data_drift: false
+having_IP_Address:
+  P-value: 1.0
+  has_data_drift: false
+having_Sub_Domain:
+  P-value: 0.999230651758703
+  has_data_drift: false
+on_mouseover:
+  P-value: 0.9999760319468036
+  has_data_drift: false
+popUpWidnow:
+  P-value: 1.0
+  has_data_drift: false
+port:
+  P-value: 1.0
+  has_data_drift: false
+web_traffic:
+  P-value: 0.8007673044155985
+  has_data_drift: false

@@ -1,0 +1,15 @@
+[2025-11-27 15:02:45,988] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-11-27 15:02:45,989] 25 root - INFO - START OF: DATA INGESTION
+[2025-11-27 15:02:45,989] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-11-27 15:02:45,989] 17 root - INFO - Initiating Data Ingestion
+[2025-11-27 15:02:52,197] 85 root - INFO - Train-Test split completed. Train: 80.0% and Test: 20.0%
+
+[2025-11-27 15:02:52,197] 86 root - INFO - Exited the `split_data_as_train_test` method of DataIngestion Class.
+[2025-11-27 15:02:52,198] 90 root - INFO - Exporting the train and test data.
+[2025-11-27 15:02:52,259] 93 root - INFO - Exporting training and testind data completed.
+[2025-11-27 15:02:52,260] 19 root - INFO - Data Ingestion Artifacts:
+DataIngestionArtifact(trained_file_path='Artifacts\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\data_ingestion\\ingested\\test.csv')
+[2025-11-27 15:02:52,260] 20 root - INFO - Data Ingestion Completed with SUCCESS!!
