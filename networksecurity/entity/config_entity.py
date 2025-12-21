@@ -2,7 +2,7 @@ from networksecurity.constants import training_pipeline
 from datetime import datetime
 import os
 
-# Changes
+# Changes to be pusehd for testing
 
 class TrainingPipelineConfig:
     def __init__(self, timestamp=datetime.now()):
