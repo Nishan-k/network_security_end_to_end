@@ -1,0 +1,69 @@
+[2025-12-21 23:26:38,134] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-21 23:26:38,144] 107 dagshub - INFO - Accessing as Nishan-k
+[2025-12-21 23:26:39,090] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Nishan-k/network_security_end_to_end "HTTP/1.1 200 OK"
+[2025-12-21 23:26:39,928] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-21 23:26:39,932] 107 dagshub - INFO - Initialized MLflow to track repo "Nishan-k/network_security_end_to_end"
+[2025-12-21 23:26:39,933] 107 dagshub - INFO - Repository Nishan-k/network_security_end_to_end initialized!
+[2025-12-21 23:28:00,180] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-21 23:28:00,181] 25 root - INFO - START OF: DATA INGESTION
+[2025-12-21 23:28:00,181] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-21 23:28:00,181] 32 root - INFO - Initiate Data Ingestion
+[2025-12-21 23:28:06,718] 85 root - INFO - Train-Test split completed. Train: 80.0% and Test: 20.0%
+
+[2025-12-21 23:28:06,718] 86 root - INFO - Exited the `split_data_as_train_test` method of DataIngestion Class.
+[2025-12-21 23:28:06,719] 90 root - INFO - Exporting the train and test data.
+[2025-12-21 23:28:06,783] 93 root - INFO - Exporting training and testind data completed.
+[2025-12-21 23:28:06,784] 34 root - INFO - Data Ingestion Artifacts:
+DataIngestionArtifact(trained_file_path='Artifacts\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\data_ingestion\\ingested\\test.csv')
+[2025-12-21 23:28:06,784] 35 root - INFO - Data Ingestion Completed.
+[2025-12-21 23:28:06,805] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-21 23:28:06,805] 25 root - INFO - START OF: DATA VALIDATION
+[2025-12-21 23:28:06,805] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-21 23:28:06,805] 46 root - INFO - Initiate Data Validation
+[2025-12-21 23:28:06,805] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\train.csv
+[2025-12-21 23:28:06,832] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\test.csv
+[2025-12-21 23:28:06,856] 27 root - INFO - Required number of columns: 31
+[2025-12-21 23:28:06,857] 28 root - INFO - The number of columns in the provided dataframe is: 31
+[2025-12-21 23:28:06,857] 30 root - INFO - The number of columns matches.
+[2025-12-21 23:28:06,857] 27 root - INFO - Required number of columns: 31
+[2025-12-21 23:28:06,857] 28 root - INFO - The number of columns in the provided dataframe is: 31
+[2025-12-21 23:28:06,857] 30 root - INFO - The number of columns matches.
+[2025-12-21 23:28:07,026] 48 root - INFO - Data Validation Artifacts:
+DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\data_ingestion\\ingested\\train.csv', valid_test_file_path='Artifacts\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\data_validation\\drift_report\\report.yaml')
+[2025-12-21 23:28:07,027] 49 root - INFO - Data Validation Completed.
+[2025-12-21 23:28:07,027] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-21 23:28:07,027] 25 root - INFO - START OF: DATA TRANSFORMATION
+[2025-12-21 23:28:07,027] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-21 23:28:07,027] 60 root - INFO - Initiate Data Transformation
+[2025-12-21 23:28:07,027] 36 root - INFO - Entered initiate_data_transformation method of DataTransformation Class
+[2025-12-21 23:28:07,027] 38 root - INFO - Starting Data Transformation
+[2025-12-21 23:28:07,027] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\train.csv
+[2025-12-21 23:28:07,044] 39 root - INFO - Reading data from: Artifacts\data_ingestion\ingested\test.csv
+[2025-12-21 23:28:07,050] 25 root - INFO - Entered the get_data_transformer_object method of the DataTransformation Class
+[2025-12-21 23:28:07,059] 47 root - INFO - Saving the NumPy array data at: Artifacts\data_transformation\transformed\train.npy
+[2025-12-21 23:28:07,060] 47 root - INFO - Saving the NumPy array data at: Artifacts\data_transformation\transformed\test.npy
+[2025-12-21 23:28:07,061] 59 root - INFO - Saving the object as .pkl file at: Artifacts\data_transformation\transformed_object\preprocessing.pkl
+[2025-12-21 23:28:07,064] 62 root - INFO - Data Transformation artifacts:
+DataTransformationArtifact(transformed_object_file_path='Artifacts\\data_transformation\\transformed_object\\preprocessing.pkl', transformed_train_file_path='Artifacts\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\data_transformation\\transformed\\test.npy')
+[2025-12-21 23:28:07,064] 63 root - INFO - Data Transformation Completed.
+[2025-12-21 23:28:07,064] 23 root - INFO - 
+
+------------------------------------------------------------------------------------------
+[2025-12-21 23:28:07,064] 25 root - INFO - START OF: MODEL TRAINING
+[2025-12-21 23:28:07,064] 26 root - INFO - ------------------------------------------------------------------------------------------
+
+[2025-12-21 23:28:07,064] 74 root - INFO - Initiate Model Training
+[2025-12-21 23:32:21,197] 59 root - INFO - Saving the object as .pkl file at: Artifacts\model_trainer\trained_model\model.pkl
+[2025-12-21 23:32:21,249] 59 root - INFO - Saving the object as .pkl file at: final_model/model.pkl
+[2025-12-21 23:32:21,303] 76 root - INFO - Model Training Artifacts:
+None
+[2025-12-21 23:32:21,303] 77 root - INFO - Model Training Completed.
