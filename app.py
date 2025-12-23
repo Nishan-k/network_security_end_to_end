@@ -29,6 +29,7 @@ mongo_db_url = os.getenv("MONGO_DB_URL")
 
 if dagshub_token:
     client = DagsHubClient(token=dagshub_token)
+    print("✅ DagsHub client initialized with token.")
 else:
     print("⚠️ DAGSHUB_TOKEN not found. DagsHub integration will be disabled.")
     client = None
