@@ -17,15 +17,21 @@ from uvicorn import run as app_run
 from fastapi.responses import Response
 from starlette.responses import RedirectResponse
 import pandas as pd
-
+from dagshub import DagsHubClient
 from fastapi.templating import Jinja2Templates
 templates = Jinja2Templates(directory="./templates")
 
 ca = certifi.where()
 load_dotenv()
 
-# mongo_db_url = os.getenv("MONGO_DB_URL")
+dagshub_token = os.getenv("DAGSHUB_TOKEN")
+mongo_db_url = os.getenv("MONGO_DB_URL")
 
+if dagshub_token:
+    client = DagsHubClient(token=dagshub_token)
+else:
+    print("⚠️ DAGSHUB_TOKEN not found. DagsHub integration will be disabled.")
+    client = None
 
 # client = pymongo.MongoClient(mongo_db_url, tlsCAFIile= ca)
 
